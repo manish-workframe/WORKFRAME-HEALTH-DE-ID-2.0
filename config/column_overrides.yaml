@@ -1,0 +1,13 @@
+# Only needed if the app reads a column of the Keystone export wrongly.
+# Look at KEEP_INSIDE_HOSPITAL/column_mapping.csv after a run, then add lines here:
+#   "Column name exactly as in the export": field
+# Use "ignore" to drop a column completely.
+# Fields: patient_name, uhid, abha, sex, age, dob, admission_no, admission_date, discharge_date, ward, bed, pin,
+#   address, phone, payer, department, consultant, consultant_mobile, consultant_type, complaints, temp, bp, pulse,
+#   spo2, rr, weight, exam_pa, exam_rs, exam_cvs, exam_cns, exam_other, investigations, treatment_given, diagnosis,
+#   diagnosis_year, icd_code, surgery_name, surgery_date, surgery_notes, discharge_medication, advice,
+#   xray_report, xray_report_status, encounter_type
+#
+# Examples:
+# "Pt Category": payer
+# "Remarks": ignore

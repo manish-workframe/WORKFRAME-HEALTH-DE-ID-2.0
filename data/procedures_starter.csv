@@ -1,0 +1,31 @@
+match,code,display
+LAP(AROSCOPIC)? ?CHOLECYSTECTOMY|\bLAP CHOLE,WF-PROC-001,Laparoscopic cholecystectomy
+CHOLECYSTECTOMY,WF-PROC-002,Cholecystectomy (open)
+LAP(AROSCOPIC)? ?APPENDICECTOMY|LAP(AROSCOPIC)? ?APPENDECTOMY,WF-PROC-003,Laparoscopic appendicectomy
+APPENDICECTOMY|APPENDECTOMY,WF-PROC-004,Appendicectomy (open)
+HERNIOPLASTY|HERNIORRHAPHY|MESH REPAIR|\bTEP\b|\bTAPP\b,WF-PROC-005,Hernia repair
+\bLSCS\b|CAESAREAN|CESAREAN,WF-PROC-006,Caesarean section
+HYSTERECTOMY|\bTAH\b|\bTLH\b,WF-PROC-007,Hysterectomy
+\bTURP\b,WF-PROC-008,Transurethral resection of prostate
+\bORIF\b|OPEN REDUCTION,WF-PROC-009,Open reduction and internal fixation of fracture
+CLOSED REDUCTION|\bCRIF\b|CAST APPLICATION|POP APPLICATION,WF-PROC-010,Closed reduction / cast application
+DEBRIDEMENT|WOUND WASH,WF-PROC-011,Wound debridement
+INCISION AND DRAINAGE|\bI ?& ?D\b|\bI AND D\b,WF-PROC-012,Incision and drainage
+CIRCUMCISION,WF-PROC-013,Circumcision
+PHACO|CATARACT|\bSICS\b|\bIOL\b,WF-PROC-014,Cataract extraction with lens implant
+TONSILLECTOMY,WF-PROC-015,Tonsillectomy
+CORONARY ANGIOGRAPHY|\bCAG\b|ANGIOGRAM,WF-PROC-016,Coronary angiography
+ANGIOPLASTY|\bPTCA\b|\bPCI\b|STENTING,WF-PROC-017,Coronary angioplasty
+\bCABG\b|BYPASS GRAFT,WF-PROC-018,Coronary artery bypass graft
+HA?EMODIALYSIS|DIALYSIS,WF-PROC-019,Haemodialysis
+UPPER GI ENDOSCOPY|\bUGIE\b|\bOGD\b|ENDOSCOPY,WF-PROC-020,Upper gastrointestinal endoscopy
+COLONOSCOPY,WF-PROC-021,Colonoscopy
+BRONCHOSCOPY,WF-PROC-022,Bronchoscopy
+\bERCP\b,WF-PROC-023,Endoscopic retrograde cholangiopancreatography
+\bD ?& ?C\b|DILATATION AND CURETTAGE,WF-PROC-024,Dilatation and curettage
+TUBECTOMY|TUBAL LIGATION|\bTL\b,WF-PROC-025,Tubal ligation
+PLEURAL TAP|THORACOCENTESIS|\bICD INSERTION|INTERCOSTAL DRAIN,WF-PROC-026,Pleural aspiration / intercostal drain
+BLOOD TRANSFUSION|\bPRBC\b|PACKED CELL,WF-PROC-027,Blood transfusion
+INTUBATION|MECHANICAL VENTILATION|VENTILATOR,WF-PROC-028,Intubation / mechanical ventilation
+CENTRAL LINE|\bCVC\b,WF-PROC-029,Central venous catheter insertion
+URS|URETEROSCOPY|\bPCNL\b|LITHOTRIPSY|\bDJ STENT,WF-PROC-030,Urinary stone procedure

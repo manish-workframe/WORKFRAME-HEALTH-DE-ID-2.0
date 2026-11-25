@@ -1,0 +1,40 @@
+match,code,system,display,category,ucum,confidence
+TEMP|TEMPERATURE,8310-5,LOINC,Body temperature,vital-signs,Cel,high
+SYSTOLIC,8480-6,LOINC,Systolic blood pressure,vital-signs,mm[Hg],high
+DIASTOLIC,8462-4,LOINC,Diastolic blood pressure,vital-signs,mm[Hg],high
+PULSE|HEART RATE|\bHR\b,8867-4,LOINC,Heart rate,vital-signs,/min,high
+RESP|\bRR\b,9279-1,LOINC,Respiratory rate,vital-signs,/min,high
+SPO2|SATURATION,59408-5,LOINC,Oxygen saturation in Arterial blood by Pulse oximetry,vital-signs,%,high
+WEIGHT,29463-7,LOINC,Body weight,vital-signs,kg,high
+HEIGHT,8302-2,LOINC,Body height,vital-signs,cm,high
+COMPLETE BLOOD COUNT|\bCBC\b|HAEMOGRAM|HEMOGRAM,58410-2,LOINC,CBC panel - Blood by Automated count,laboratory,,high
+HAEMOGLOBIN|HEMOGLOBIN|\bHB\b|\bHGB\b,718-7,LOINC,Hemoglobin [Mass/volume] in Blood,laboratory,g/dL,high
+TOTAL COUNT|\bWBC\b|\bTLC\b|LEUCOCYTE COUNT|LEUKOCYTE COUNT,6690-2,LOINC,Leukocytes [#/volume] in Blood by Automated count,laboratory,10*3/uL,high
+PLATELET,777-3,LOINC,Platelets [#/volume] in Blood by Automated count,laboratory,10*3/uL,high
+ERYTHROCYTE SEDIMENTATION|\bESR\b,4537-7,LOINC,Erythrocyte sedimentation rate by Westergren method,laboratory,mm/h,high
+C REACTIVE|\bCRP\b,1988-5,LOINC,C reactive protein [Mass/volume] in Serum or Plasma,laboratory,mg/L,high
+LIVER FUNCTION|\bLFT\b,24325-3,LOINC,Hepatic function 2000 panel - Serum or Plasma,laboratory,,high
+RENAL FUNCTION|\bRFT\b|KIDNEY FUNCTION|\bKFT\b,24362-6,LOINC,Renal function 2000 panel - Serum or Plasma,laboratory,,high
+CREATININE,2160-0,LOINC,Creatinine [Mass/volume] in Serum or Plasma,laboratory,mg/dL,high
+SODIUM|\bNA\b,2951-2,LOINC,Sodium [Moles/volume] in Serum or Plasma,laboratory,mmol/L,high
+POTASSIUM|\bK\b,2823-3,LOINC,Potassium [Moles/volume] in Serum or Plasma,laboratory,mmol/L,high
+TOTAL BILIRUBIN|BILIRUBIN,1975-2,LOINC,Bilirubin.total [Mass/volume] in Serum or Plasma,laboratory,mg/dL,high
+\bSGPT\b|\bALT\b,1742-6,LOINC,Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma,laboratory,U/L,high
+\bSGOT\b|\bAST\b,1920-8,LOINC,Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma,laboratory,U/L,high
+ALBUMIN,1751-7,LOINC,Albumin [Mass/volume] in Serum or Plasma,laboratory,g/dL,high
+HBA1C|GLYCATED|GLYCOSYLATED,4548-4,LOINC,Hemoglobin A1c/Hemoglobin.total in Blood,laboratory,%,high
+GLUCOSE|\bRBS\b|\bFBS\b|\bPPBS\b|BLOOD SUGAR,2345-7,LOINC,Glucose [Mass/volume] in Serum or Plasma,laboratory,mg/dL,high
+URINE ANALYSIS|URINALYSIS|URINE ROUTINE|URINE R M|\bCUE\b,24356-8,LOINC,Urinalysis complete panel - Urine,laboratory,,high
+RHEUMATOID FACTOR|RA TEST|\bRA FACTOR,11572-5,LOINC,Rheumatoid factor [Units/volume] in Serum or Plasma,laboratory,[IU]/mL,high
+\bTSH\b|THYROID STIMULATING,3016-3,LOINC,Thyrotropin [Units/volume] in Serum or Plasma,laboratory,m[IU]/L,high
+ANTI CCP|CYCLIC CITRULLINATED,WF-LAB-001,LOCAL,Cyclic citrullinated peptide antibody,laboratory,U/mL,local
+MICROFILARIA|PERIPHERAL SMEAR FOR MF,WF-LAB-002,LOCAL,Peripheral smear for microfilaria,laboratory,,local
+PERIPHERAL SMEAR|\bPS\b,WF-LAB-003,LOCAL,Peripheral blood smear examination,laboratory,,local
+DENGUE|NS1,WF-LAB-004,LOCAL,Dengue NS1 antigen / serology,laboratory,,local
+WIDAL,WF-LAB-005,LOCAL,Widal test,laboratory,,local
+MALARIA|\bMP\b|MALARIAL PARASITE,WF-LAB-006,LOCAL,Malaria parasite test,laboratory,,local
+CHEST X RAY|CHEST XRAY|\bCXR\b|X RAY,WF-IMG-001,LOCAL,Plain radiograph (ordered),imaging,,local
+ECG|ELECTROCARDIOGRAM,WF-DX-001,LOCAL,Electrocardiogram (ordered),diagnostic,,local
+ULTRASOUND|\bUSG\b,WF-IMG-002,LOCAL,Ultrasound (ordered),imaging,,local
+\bCT\b|COMPUTED TOMOGRAPHY,WF-IMG-003,LOCAL,CT scan (ordered),imaging,,local
+\bMRI\b,WF-IMG-004,LOCAL,MRI (ordered),imaging,,local

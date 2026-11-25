@@ -1,0 +1,14 @@
+# Patient data and outputs: never commit
+KEEP_INSIDE_HOSPITAL/
+output/
+sample_data/
+selftest_run/
+*.enc
+config/governance/*.pdf
+# Build and Python
+dist/
+build/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

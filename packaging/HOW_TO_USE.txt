@@ -1,0 +1,41 @@
+WORKFRAME HEALTH  ·  CLINICAL DATA DE-IDENTIFICATION  ·  PORTABLE APP FOR WINDOWS
+==================================================================================
+
+Nothing to install. No internet needed. Nothing is uploaded.
+
+1. FIRST TIME ON THIS COMPUTER
+   - Copy the whole "WF-DeID" folder to a private place on this computer,
+     for example  D:\WF-DeID   (keep every file inside it together).
+   - Double-click  WF-DeID.exe
+   - If Windows shows "Windows protected your PC": click "More info", then "Run anyway".
+     (The hospital IT team may need to allow WF-DeID.exe in the antivirus once.)
+   - A black window opens (keep it open) and the browser opens the app.
+   - Optional: right-click WF-DeID.exe > Send to > Desktop (create shortcut).
+
+2. EVERY BATCH
+   - Double-click WF-DeID.exe. The app opens in the browser at http://127.0.0.1:8765
+   - Check "System readiness" shows everything Operational.
+   - 01 Hospital records export (required): click Browse files and choose the Excel/CSV/PDF export.
+   - 02 Radiology reports (optional): add the report list (Excel/CSV) and/or the folder of Word/PDF reports.
+   - 03 Imaging (optional): the folder of DICOM images, if supplied.
+   - 04 Laboratory results (optional).
+   - 05 Choose the output folder and enter the vault password.
+        The FIRST run creates the vault password. The hospital administrator chooses and keeps it.
+   - Click "Run de-identification" and wait.
+
+3. AFTER THE RUN
+   - Review the results page: checklist, items awaiting confirmation, image previews.
+   - Tick confirmed matches, save, and run the batch again if needed.
+   - A named person at the hospital signs off the MANUAL checklist items.
+   - Share ONLY:  output\batch_...\TRANSFER\anonymised_dataset_v1.0.zip  and its .sha256 file,
+     by the agreed secure route (never e-mail).
+
+4. NEVER SHARE
+   - KEEP_INSIDE_HOSPITAL folders (identity vault, review lists, previews)
+   - The hospital's original export files
+
+5. TRY IT FIRST
+   - On the first page, click "Create demonstration data", set a test password, and run.
+     All demonstration data is invented.
+
+To stop the app, close the black window.

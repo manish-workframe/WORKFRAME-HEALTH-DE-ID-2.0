@@ -1,0 +1,99 @@
+pattern,code,description
+"SERO ?NEGATIVE.{0,20}(ARTHRITIS|RHEUMATOID|RA\b)",M06.0,Seronegative rheumatoid arthritis
+"SERO ?POSITIVE.{0,20}(ARTHRITIS|RHEUMATOID|RA\b)",M05.9,Seropositive rheumatoid arthritis unspecified
+RHEUMATOID ARTHRITIS|\bRA\b,M06.9,Rheumatoid arthritis unspecified
+PSORIATIC ARTHRITIS,L40.5,Arthropathic psoriasis
+ANKYLOSING SPONDYLITIS,M45,Ankylosing spondylitis
+\bSLE\b|SYSTEMIC LUPUS,M32.9,Systemic lupus erythematosus unspecified
+\bGOUT,M10.9,Gout unspecified
+"OSTEO ?ARTHRITIS.{0,15}KNEE|\bOA KNEE",M17.9,Gonarthrosis unspecified
+OSTEO ?ARTHRITIS,M19.9,Arthrosis unspecified
+POLYARTHRALGIA|MULTIPLE JOINT PAIN,M25.5,Pain in joint
+LOW BACK ?ACHE|LOW BACK PAIN|\bLBA\b,M54.5,Low back pain
+\bPIVD|DISC PROLAPSE|DISC BULGE,M51.2,Other specified intervertebral disc displacement
+MYALGIA,M79.1,Myalgia
+COMMUNITY ACQUIRED PNEUMONIA|\bCAP\b,J18.9,Pneumonia unspecified
+PNEUMONIA|PNEUMONITIS|LRTI|LOWER RESPIRATORY TRACT INFECTION,J18.9,Pneumonia unspecified
+"ACUTE EXACERBATION.{0,10}COPD|\bAECOPD",J44.1,Chronic obstructive pulmonary disease with acute exacerbation
+\bCOPD|CHRONIC OBSTRUCTIVE,J44.9,Chronic obstructive pulmonary disease unspecified
+BRONCHIAL ASTHMA|\bASTHMA,J45.9,Asthma unspecified
+ACUTE BRONCHITIS|\bBRONCHITIS,J20.9,Acute bronchitis unspecified
+\bURTI\b|UPPER RESPIRATORY TRACT INFECTION|PHARYNGITIS,J06.9,Acute upper respiratory infection unspecified
+PLEURAL EFFUSION,J90,Pleural effusion not elsewhere classified
+PULMONARY TUBERCULOSIS|\bPTB\b|PULMONARY KOCH,A16.2,Tuberculosis of lung without mention of bacteriological or histological confirmation
+TUBERCULOSIS|KOCH,A16.9,Respiratory tuberculosis unspecified
+COVID,U07.1,COVID-19 virus identified
+ACUTE GASTRO ?ENTERITIS|\bAGE\b|GASTRO ?ENTERITIS|DIARRHO?EA,A09,Diarrhoea and gastroenteritis of presumed infectious origin
+DENGUE,A90,Dengue fever
+TYPHOID|ENTERIC FEVER,A01.0,Typhoid fever
+FALCIPARUM,B50.9,Plasmodium falciparum malaria unspecified
+VIVAX,B51.9,Plasmodium vivax malaria without complication
+MALARIA,B54,Unspecified malaria
+CHIKUNGUNYA,A92.0,Chikungunya virus disease
+LEPTOSPIROSIS,A27.9,Leptospirosis unspecified
+SCRUB TYPHUS,A75.3,Typhus fever due to Rickettsia tsutsugamushi
+VIRAL FEVER|ACUTE FEBRILE ILLNESS|\bAFI\b,B34.9,Viral infection unspecified
+SEPSIS|SEPTIC SHOCK|SEPTICAEMIA|SEPTICEMIA,A41.9,Sepsis unspecified
+PYREXIA|\bFEVER\b,R50.9,Fever unspecified
+URINARY TRACT INFECTION|\bUTI\b,N39.0,Urinary tract infection site not specified
+ACUTE KIDNEY INJURY|\bAKI\b|ACUTE RENAL FAILURE,N17.9,Acute kidney failure unspecified
+CHRONIC KIDNEY DISEASE|\bCKD\b,N18.9,Chronic kidney disease unspecified
+RENAL CALCULUS|RENAL STONE|NEPHROLITHIASIS|KIDNEY STONE,N20.0,Calculus of kidney
+URETERIC CALCULUS|URETERIC STONE,N20.1,Calculus of ureter
+\bBPH\b|BENIGN PROSTATIC,N40,Hyperplasia of prostate
+DIABETIC KETOACIDOSIS|\bDKA\b,E11.1,Type 2 diabetes mellitus with ketoacidosis
+TYPE ?(2|II) DIABETES|\bT2DM\b|\bDM ?(2|II)\b|DIABETES MELLITUS|\bDM\b,E11.9,Type 2 diabetes mellitus without complications
+TYPE ?(1|I) DIABETES|\bT1DM\b,E10.9,Type 1 diabetes mellitus without complications
+HYPOGLYC,E16.2,Hypoglycaemia unspecified
+HYPOTHYROID,E03.9,Hypothyroidism unspecified
+HYPERTHYROID|THYROTOXICOSIS,E05.9,Thyrotoxicosis unspecified
+HYPONATR,E87.1,Hypo-osmolality and hyponatraemia
+HYPOKAL,E87.6,Hypokalaemia
+DEHYDRATION,E86,Volume depletion
+SYSTEMIC HYPERTENSION|HYPERTENSION|\bSHTN\b|\bHTN\b,I10,Essential (primary) hypertension
+ACUTE CORONARY SYNDROME|\bACS\b|MYOCARDIAL INFARCTION|\bSTEMI|\bNSTEMI|\bAMI\b,I21.9,Acute myocardial infarction unspecified
+UNSTABLE ANGINA,I20.0,Unstable angina
+CORONARY ARTERY DISEASE|\bCAD\b|ISCHAEMIC HEART|ISCHEMIC HEART|\bIHD\b,I25.1,Atherosclerotic heart disease
+CONGESTIVE CARDIAC FAILURE|\bCCF\b|CONGESTIVE HEART FAILURE|\bCHF\b|HEART FAILURE,I50.0,Congestive heart failure
+ATRIAL FIBRILLATION|\bAF\b,I48,Atrial fibrillation and flutter
+CEREBROVASCULAR ACCIDENT|\bCVA\b|STROKE|CEREBRAL INFARCT,I63.9,Cerebral infarction unspecified
+INTRACEREBRAL HA?EMORRHAGE|\bICH\b|\bICB\b,I61.9,Intracerebral haemorrhage unspecified
+TRANSIENT ISCHA?EMIC|\bTIA\b,G45.9,Transient cerebral ischaemic attack unspecified
+SEIZURE|CONVULSION|\bGTCS\b,R56.8,Other and unspecified convulsions
+EPILEPSY,G40.9,Epilepsy unspecified
+MIGRAINE,G43.9,Migraine unspecified
+HEADACHE|HEAD ACHE|CEPHALGIA,R51,Headache
+VERTIGO|GIDDINESS|DIZZINESS,R42,Dizziness and giddiness
+SYNCOPE,R55,Syncope and collapse
+BELL'?S PALSY|FACIAL PALSY,G51.0,Bell's palsy
+PERIPHERAL NEUROPATHY|NEUROPATHY,G62.9,Polyneuropathy unspecified
+IRON DEFICIENCY ANA?EMIA|\bIDA\b,D50.9,Iron deficiency anaemia unspecified
+ANA?EMIA,D64.9,Anaemia unspecified
+THROMBOCYTOPENIA,D69.6,Thrombocytopenia unspecified
+CELLULITIS,L03.9,Cellulitis unspecified
+ABSCESS,L02.9,Cutaneous abscess furuncle and carbuncle unspecified
+ACUTE PANCREATITIS|PANCREATITIS,K85.9,Acute pancreatitis unspecified
+CHOLECYSTITIS,K81.9,Cholecystitis unspecified
+CHOLELITHIASIS|GALL ?STONE|\bGSD\b,K80.2,Calculus of gallbladder without cholecystitis
+APPENDICITIS,K37,Unspecified appendicitis
+INGUINAL HERNIA,K40.9,Unilateral or unspecified inguinal hernia without obstruction or gangrene
+UMBILICAL HERNIA,K42.9,Umbilical hernia without obstruction or gangrene
+\bGERD|GASTRO ?O?ESOPHAGEAL REFLUX,K21.9,Gastro-oesophageal reflux disease without oesophagitis
+PEPTIC ULCER|\bAPD\b|ACID PEPTIC,K27.9,Peptic ulcer site unspecified
+GASTRITIS,K29.7,Gastritis unspecified
+ALCOHOLIC LIVER,K70.9,Alcoholic liver disease unspecified
+CIRRHOSIS|\bCLD\b|CHRONIC LIVER DISEASE,K74.6,Other and unspecified cirrhosis of liver
+HEPATITIS A,B15.9,Hepatitis A without hepatic coma
+VIRAL HEPATITIS|ACUTE HEPATITIS,B17.9,Acute viral hepatitis unspecified
+JAUNDICE,R17,Unspecified jaundice
+ALCOHOL WITHDRAWAL,F10.3,Mental and behavioural disorders due to use of alcohol: withdrawal state
+DEPRESSION,F32.9,Depressive episode unspecified
+PSYCHOSIS,F29,Unspecified nonorganic psychosis
+ORGANOPHOSPHORUS|\bOP POISONING|\bOPC POISONING,T60.0,Toxic effect of organophosphate and carbamate insecticides
+SNAKE ?BITE,T63.0,Toxic effect of snake venom
+"FRACTURE.{0,20}(DISTAL|LOWER END).{0,10}RADIUS|COLLES",S52.5,Fracture of lower end of radius
+"FRACTURE.{0,20}RADIUS|RADIUS FRACTURE",S52.8,Fracture of other parts of forearm
+"FRACTURE.{0,20}NECK OF FEMUR|\bNOF\b",S72.0,Fracture of neck of femur
+"FRACTURE.{0,20}FEMUR|FEMUR FRACTURE",S72.9,Fracture of femur part unspecified
+NORMAL DELIVERY|\bFTND\b|\bNVD\b|SPONTANEOUS VAGINAL DELIVERY,O80,Single spontaneous delivery
+CAESAREAN|CESAREAN|\bLSCS\b,O82,Single delivery by caesarean section

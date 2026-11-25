@@ -1,0 +1,27 @@
+match,code,display
+NEURO ?SURG,NEUROSURG,Neurosurgery
+CARDIOTHORACIC|\bCTVS\b,CTVS,Cardiothoracic and vascular surgery
+PLASTIC,PLAST,Plastic surgery
+ORTHO,ORTHO,Orthopaedics
+\bURO,URO,Urology
+SURGEON|SURGERY|\bGEN SURG|\bMS\b,GENSURG,General surgery
+GYN|OBG|OBST|\bOB\b,OBGYN,Obstetrics and gynaecology
+PAED|PEDIA|NEONAT|CHILD,PAED,Paediatrics
+CARDIO,CARD,Cardiology
+PULMO|CHEST|RESPIRATORY|\bTB\b,RESP,Respiratory medicine
+NEPHRO,NEPH,Nephrology
+GASTRO|HEPATO,GASTRO,Gastroenterology and hepatology
+NEURO,NEURO,Neurology
+\bENT\b|OTORHINO,ENT,Otorhinolaryngology (ENT)
+OPHTHAL|\bEYE\b,OPHTH,Ophthalmology
+DERMA|SKIN,DERM,Dermatology
+PSYCH,PSYCH,Psychiatry
+ONCO,ONC,Oncology
+ENDOCRIN|DIABETOLOG,ENDO,Endocrinology and diabetes
+RHEUMA,RHEUM,Rheumatology
+ANAES|ANESTH,ANAES,Anaesthesiology
+EMERGENCY|CASUALTY|\bER\b,EMERG,Emergency medicine
+INTENSIV|CRITICAL CARE|\bICU\b,CRITCARE,Critical care
+DENT,DENT,Dentistry
+PHYSICIAN|GENERAL MEDICINE|INTERNAL MEDICINE|\bMD\b|MEDICINE,GENMED,General medicine
+OTHER,OTHER,Other or suppressed specialty

@@ -1,0 +1,44 @@
+# Workframe Health De-ID 2.0 settings.
+
+dataset:
+  version: "1.0"                          # becomes the folder name anonymised_dataset_v1.0
+  source_hospital_system: "Hospital Information System export"     # set per hospital in the app
+  source_imaging_system: "Radiology system (DICOM) and radiology reports"
+  receiving_party: "To be confirmed"
+
+# Dates in the hospital export, when they are text. Day first is normal in India (13/11/26).
+dayfirst: true
+
+# Patterns for hospital numbers that may appear inside free text (regular expressions).
+id_patterns:
+  - 'ADM\d{2,6}/\d{3,8}'
+  - '\bIP\s*NO\.?\s*[:#-]?\s*\w+'
+  - 'UHID[\s:#-]*\w+'
+  - '\bIP\d{4}/\d{4,8}\b'
+  - '\b[A-Z]{2,4}\d{4}/\d{4,8}\b'      # FY-style hospital numbers, e.g. SH2627/000526
+  - '\b(?:MRN|MR\s*NO|REG\.?\s*NO|PATIENT\s*ID)\s*[:#.-]*\s*[A-Z0-9/-]{3,}'
+
+linking:
+  days_before_admission: 2
+  days_after_discharge: 2
+  auto: 0.92            # name/sex/age/date match score accepted automatically
+  review: 0.75          # between review and auto: sent to the review list (not released)
+  include_patient_xrays_outside_admission: true   # X-ray matched by patient number but taken outside any stay
+
+xray:
+  report_only_xray_modality: CR      # DICOM code used for X-ray studies known only from a report (CR or DX)
+  ocr_burned_in_text: true
+  mask_corners: false
+  corner_band_percent: 7
+  keep_only_images: true
+
+suppression:
+  min_group_size: 5     # small-cell threshold (agree with the receiving team; documented in the methodology)
+
+vitals_plausible:       # values outside these ranges are dropped and reported in the data quality statement
+  temperature_c: [30, 45]
+  systolic: [50, 260]
+  diastolic: [20, 160]
+  heart_rate: [20, 250]
+  resp_rate: [4, 80]
+  spo2: [40, 100]

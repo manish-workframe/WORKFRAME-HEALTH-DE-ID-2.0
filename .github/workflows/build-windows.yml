@@ -1,0 +1,64 @@
+name: Build portable Windows app
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt "pyinstaller>=6.6"
+
+      - name: Install Tesseract OCR (bundled into the app)
+        run: choco install tesseract -y --no-progress
+
+      - name: Build WF-DeID.exe
+        run: pyinstaller packaging/wfdeid.spec --noconfirm --distpath dist --workpath build
+
+      - name: Assemble the portable folder
+        shell: pwsh
+        run: |
+          $d = "dist/WF-DeID"
+          Copy-Item -Recurse data, config, fonts, static $d
+          $t = Get-ChildItem -Path "C:\Program Files", "C:\Program Files (x86)", "C:\ProgramData\chocolatey" -Filter tesseract.exe -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1
+          if (-not $t) { throw "Tesseract was not found after installation" }
+          New-Item -ItemType Directory "$d/tesseract" | Out-Null
+          Copy-Item -Recurse "$($t.DirectoryName)/*" "$d/tesseract"
+          Copy-Item packaging/HOW_TO_USE.txt $d
+          Copy-Item README.md $d
+
+      - name: Self-test the packaged app (real pydicom, bundled Tesseract)
+        shell: pwsh
+        run: |
+          & "dist/WF-DeID/WF-DeID.exe" --selftest
+          if ($LASTEXITCODE -ne 0) { throw "Self-test failed" }
+          Remove-Item -Recurse -Force dist/WF-DeID/selftest_run, dist/WF-DeID/KEEP_INSIDE_HOSPITAL, dist/WF-DeID/sample_data -ErrorAction SilentlyContinue
+
+      - name: Zip
+        shell: pwsh
+        run: Compress-Archive -Path dist/WF-DeID -DestinationPath WF-DeID-Portable-Windows.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WF-DeID-Portable-Windows
+          path: WF-DeID-Portable-Windows.zip
+          retention-days: 30
+
+      - name: Attach to GitHub release (version tags)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: WF-DeID-Portable-Windows.zip
